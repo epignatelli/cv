@@ -24,11 +24,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout repo
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
       - name: Compile .tex
-      - uses: dante-ev/latex-action@master
+        uses: dante-ev/latex-action@master
         with:
           root_file:  CV.tex
           args: -lualatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
