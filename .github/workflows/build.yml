@@ -32,3 +32,9 @@ jobs:
         with:
           root_file:  CV.tex
           args: -lualatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+      
+      - name: Push pdf
+        run: |
+          git config --global user.name 'Eduardo'
+          git config --global user.email 'edu.pignatelli@gmail.com'
+          git commit -am "Automated pdf generation"
