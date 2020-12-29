@@ -37,5 +37,7 @@ jobs:
         run: |
           git config --global user.name 'Eduardo'
           git config --global user.email 'edu.pignatelli@gmail.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git add CV.pdf
           git commit -am "Automated pdf generation"
+          git push
