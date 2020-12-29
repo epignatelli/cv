@@ -37,4 +37,5 @@ jobs:
         run: |
           git config --global user.name 'Eduardo'
           git config --global user.email 'edu.pignatelli@gmail.com'
+          git add CV.pdf
           git commit -am "Automated pdf generation"
