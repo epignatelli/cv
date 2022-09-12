@@ -22,8 +22,9 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \color{mblue}
-    {\MakeUppercase{\namesize\@name}}
+    \textcolor{mblue}{\bfseries\textsc{\namesize\@name}}
+    \vspace{0em}
+    % \hfill \textcolor{black}{\textsc{Curriculum Vitae}}
   \endgroup
 }
 
