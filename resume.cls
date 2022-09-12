@@ -22,7 +22,11 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \emph{\textsc{\namesize\@name}}
+  % \begin{center}
+    \emph{\textsc{\namesize\@name}} \\
+    \textsc{Curriculum Vitae}
+    \vspace{1em}
+  % \end{center}
   \endgroup
 }
 
