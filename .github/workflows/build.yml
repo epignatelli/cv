@@ -2,7 +2,7 @@
 
 name: Build
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
@@ -30,15 +30,16 @@ jobs:
       - name: Compile .tex
         uses: dante-ev/latex-action@master
         with:
-          root_file:  CV.tex
+          root_file:  main.tex
           args: -lualatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
-      
+        run: \cp -r  main.pdf CV.pdf
+
       - name: Push pdf
         run: |
           git config --global user.name 'Eduardo'
           git config --global user.email 'edu.pignatelli@gmail.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git pull
-          git add CV.pdf
+          git add main.pdf CV.pdf
           git commit -am "Automated pdf generation"
           git push

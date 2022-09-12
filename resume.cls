@@ -1,7 +1,7 @@
 \ProvidesClass{resume}
 
-\LoadClass[10pt,letterpaper]{article} % Font size and paper type
-\usepackage[a4paper, top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\LoadClass[10pt,a4paper]{article} % Font size and paper type
+\usepackage[a4paper, top=3cm, bottom=3cm, left=2cm, right=2cm]{geometry}
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
@@ -11,7 +11,8 @@
 % setup color theme
 \usepackage[dvipsnames]{xcolor}
 \definecolor{RubinRed}{RGB}{192,0,0}
-
+\definecolor{mblue}{HTML}{0668E1}
+\definecolor{dblue}{HTML}{0053d6}
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -21,7 +22,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \color{RubinRed}
+    \color{mblue}
     {\MakeUppercase{\namesize\@name}}
   \endgroup
 }
@@ -42,7 +43,7 @@
   \MakeUppercase{\sc #1} % Section title
 %   \sectionlineskip
   \vskip 1mm % Horizontal line
-  {\color{RubinRed}\hrule height 0.15mm}
+  {\color{mblue}\hrule height 0.1mm }
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{0em} % Margin within the section
   }
