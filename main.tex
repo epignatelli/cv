@@ -1,8 +1,18 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
 \documentclass{resume}
 \usepackage{etex}
 \usepackage{enumitem}
 \usepackage{CormorantGaramond}
+\usepackage{xltxtra,fontspec,xunicode}
 
+\defaultfontfeatures{Scale=MatchLowercase}
+\setromanfont{GDSherpa-Medium}[
+    BoldFont=GDSherpa-Bold
+    ]
+\setmonofont{GDSherpa-Medium}[
+    BoldFont=GDSherpa-Bold
+    ]
 
 
 \definecolor{mblue}{HTML}{0668E1}
@@ -12,8 +22,10 @@
 
 
 \begin{document}
-\emph{\huge\textsc{Eduardo Pignatelli}} \\
-\vspace{-1em}
+\subsection*{\emph{\huge\textsc{Eduardo Pignatelli}}}
+% \emph{\huge\textsc{Eduardo Pignatelli}} \\
+% CV
+% \vspace{-1em}
 
 
 \input{contact.tex}

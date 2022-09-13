@@ -20,8 +20,11 @@
 %	SECTION FORMATTING
 %----------------------------------------------------------------------------------------
 
+\renewcommand{\baselinestretch}{0.9}
+
+
 \titleformat{\section}
-  {\normalfont}{\thesection}{1em}{}[{\color{mblue}\titlerule[0.1mm]}]
+  {\large\normalfont}{\thesection}{1em}{}[{\color{mblue}\titlerule[0.1mm]}]
 
 
 % Defines the rSection environment for the large sections within the CV
