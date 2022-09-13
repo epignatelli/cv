@@ -5,7 +5,7 @@
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
-
+\usepackage{titlesec}
 
 
 % setup color theme
@@ -39,6 +39,10 @@
 %----------------------------------------------------------------------------------------
 %	SECTION FORMATTING
 %----------------------------------------------------------------------------------------
+
+\titleformat{\section}
+  {\normalfont}{\thesection}{1em}{}[{\color{mblue}\titlerule[0.1mm]}]
+
 
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
