@@ -1,4 +1,4 @@
-%!TEX TS-program = xelatex
+%!TEX program = xelatex
 %!TEX encoding = UTF-8 Unicode
 \documentclass{resume}
 \usepackage{etex}
@@ -6,29 +6,28 @@
 \usepackage{CormorantGaramond}
 
 
-% \usepackage{xltxtra,fontspec,xunicode}
-% \defaultfontfeatures{Scale=MatchLowercase}
-% \setromanfont{GDSherpa-Medium}[
-%     BoldFont=GDSherpa-Bold,
-%     % AutoFakeSlant=0.15
-%     ]
-%     \setmonofont{GDSherpa-Medium}[
-%         BoldFont=GDSherpa-Bold,
-%         % AutoFakeSlant=0.15
-%         ]
+\usepackage{xltxtra,fontspec,xunicode}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setromanfont{Poppins-ExtraLight}[
+    Path=./fonts/,
+    BoldFont=Poppins-Medium,
+    ItalicFont=Poppins-ExtraLightItalic
+    ]
+\setmonofont{Poppins-ExtraLight}[
+    Path=./fonts/,
+    BoldFont=Poppins-Medium,
+    ItalicFont=Poppins-ExtraLightItalic,
+    ]
 
 
 \definecolor{mblue}{HTML}{0668E1}
 \definecolor{dblue}{HTML}{0053d6}
-\renewcommand{\emph}[1]{\textcolor{mblue}{\textbf{#1}}}
+\renewcommand{\emph}[1]{\textcolor{black}{\textbf{#1}}}
 \usepackage[colorlinks=true, linkcolor=mblue, filecolor=magenta, urlcolor=mblue, pdfborderstyle={/S/U/W 1}]{hyperref}
 
 
 \begin{document}
-\subsection*{\emph{\huge{Eduardo Pignatelli}}}
-% \emph{\huge\textsc{Eduardo Pignatelli}} \\
-% CV
-% \vspace{-1em}
+\subsection*{\emph{\huge\MakeUppercase{Eduardo Pignatelli}}}
 
 
 \input{contact.tex}

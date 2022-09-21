@@ -31,7 +31,7 @@ jobs:
         uses: dante-ev/latex-action@master
         with:
           root_file:  main.tex
-          args: -lualatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+          args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
 
       - name: Copy to CV.tex
         run: \cp -r  main.pdf CV.pdf
