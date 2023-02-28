@@ -26,22 +26,29 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Compile .tex
+      - name: Produce fullcv and resume
+        run: |
+          \cp -r  main.tex fullcv.tex
+          sed 's/\documentclass\[fullcv\]/\documentclass/g' main.tex > resume.tex
+
+      - name: Compile fullcv.tex
         uses: dante-ev/latex-action@master
         with:
-          root_file:  main.tex
+          root_file:  fullcv.tex
           args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
 
-      - name: Copy to CV.tex
-        run: \cp -r  main.pdf CV.pdf
+      - name: Compile resume.tex
+        uses: dante-ev/latex-action@master
+        with:
+          root_file:  resume.tex
+          args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
 
-      - name: Push pdf
+      - name: Push compiled files
         run: |
           git config --global user.name 'Eduardo'
           git config --global user.email 'edu.pignatelli@gmail.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git pull
-          git add main.pdf CV.pdf
-          git commit -am "Automated pdf generation"
+          git add fullcv.pdf resume.pdf
+          git commit -am "Automated tex compilation and pdf generation"
           git push

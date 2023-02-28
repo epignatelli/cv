@@ -1,10 +1,9 @@
-%!TEX program = xelatex
 %!TEX encoding = UTF-8 Unicode
-\documentclass{resume}
+\documentclass[fullcv]{resume}
 \usepackage{etex}
 \usepackage{enumitem}
 \usepackage{CormorantGaramond}
-
+\usepackage{import}
 
 \usepackage{xltxtra,fontspec,xunicode}
 \defaultfontfeatures{Scale=MatchLowercase}
@@ -25,28 +24,80 @@
 \renewcommand{\emph}[1]{\textcolor{black}{\textbf{#1}}}
 \usepackage[colorlinks=true, linkcolor=mblue, filecolor=magenta, urlcolor=mblue, pdfborderstyle={/S/U/W 1}]{hyperref}
 
-
 \begin{document}
 \subsection*{\emph{\huge\MakeUppercase{Eduardo Pignatelli}}}
+% ------------------------------------------------------------------------------------------
 
 
+
+
+
+%% - CONTACT
 \input{cv/contact.tex}
+% ------------------------------------------------------------------------------------------
 
-\input{cv/education}
 
-\input{cv/publications.tex}
 
-\input{cv/awards.tex}
 
+
+%% - EDUCATION
+\input{cv/education.tex}
+% ------------------------------------------------------------------------------------------
+
+
+
+
+
+%% - INDUSTRY EXPERIENCE
 \input{cv/industry_experience.tex}
+% ------------------------------------------------------------------------------------------
 
-\input{cv/teaching_experience}
 
+
+
+
+%% - TEACHING
+\input{cv/teaching_experience.tex}
+% ------------------------------------------------------------------------------------------
+
+
+
+
+
+%% - PUBLICATIONS
+\input{cv/publications.tex}
+% ------------------------------------------------------------------------------------------
+
+
+
+
+
+%% - AWARDS
+\input{cv/awards.tex}
+% ------------------------------------------------------------------------------------------
+
+
+
+
+%% - PRESENTATIONS
 \input{cv/presentations.tex}
+% ------------------------------------------------------------------------------------------
 
+
+
+
+
+%% - LICENSES
 \input{cv/licences.tex}
+% ------------------------------------------------------------------------------------------
 
-\input{cv/certifications.tex}
+
+
+
+
+%% - COURSES
+\input{cv/courses.tex}
+% ------------------------------------------------------------------------------------------
 
 
 
