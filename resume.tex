@@ -1,0 +1,104 @@
+%!TEX encoding = UTF-8 Unicode
+\documentclass[fullcv]{resume}
+\usepackage{etex}
+\usepackage{enumitem}
+\usepackage{CormorantGaramond}
+\usepackage{import}
+
+\usepackage{xltxtra,fontspec,xunicode}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setromanfont{Poppins-ExtraLight}[
+    Path=./fonts/,
+    BoldFont=Poppins-Medium,
+    ItalicFont=Poppins-ExtraLightItalic
+    ]
+\setmonofont{Poppins-ExtraLight}[
+    Path=./fonts/,
+    BoldFont=Poppins-Medium,
+    ItalicFont=Poppins-ExtraLightItalic,
+    ]
+
+
+\definecolor{mblue}{HTML}{0668E1}
+\definecolor{dblue}{HTML}{0053d6}
+\renewcommand{\emph}[1]{\textcolor{black}{\textbf{#1}}}
+\usepackage[colorlinks=true, linkcolor=mblue, filecolor=magenta, urlcolor=mblue, pdfborderstyle={/S/U/W 1}]{hyperref}
+
+\begin{document}
+\subsection*{\emph{\huge\MakeUppercase{Eduardo Pignatelli}}}
+% ------------------------------------------------------------------------------------------
+
+
+
+
+
+%% - CONTACT
+\input{cv/contact.tex}
+% ------------------------------------------------------------------------------------------
+
+
+
+
+
+%% - EDUCATION
+\input{cv/education.tex}
+% ------------------------------------------------------------------------------------------
+
+
+
+
+
+%% - INDUSTRY EXPERIENCE
+\input{cv/industry_experience.tex}
+% ------------------------------------------------------------------------------------------
+
+
+
+
+
+%% - TEACHING
+\input{cv/teaching_experience.tex}
+% ------------------------------------------------------------------------------------------
+
+
+
+
+
+%% - PUBLICATIONS
+\input{cv/publications.tex}
+% ------------------------------------------------------------------------------------------
+
+
+
+
+
+%% - AWARDS
+\input{cv/awards.tex}
+% ------------------------------------------------------------------------------------------
+
+
+
+
+%% - PRESENTATIONS
+\input{cv/presentations.tex}
+% ------------------------------------------------------------------------------------------
+
+
+
+
+
+%% - LICENSES
+\input{cv/licences.tex}
+% ------------------------------------------------------------------------------------------
+
+
+
+
+
+%% - COURSES
+\input{cv/courses.tex}
+% ------------------------------------------------------------------------------------------
+
+
+
+\end{document}
