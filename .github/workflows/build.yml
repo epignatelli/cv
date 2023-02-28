@@ -49,6 +49,6 @@ jobs:
           git config --global user.email 'edu.pignatelli@gmail.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git pull
-          git add fullcv.pdf resume.pdf
+          git add ./compiled
           git commit -am "Automated tex compilation and pdf generation"
           git push
