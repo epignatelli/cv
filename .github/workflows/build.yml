@@ -34,14 +34,14 @@ jobs:
       - name: Compile fullcv.tex
         uses: dante-ev/latex-action@master
         with:
-          root_file:  fullcv.tex
-          args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+          root_file: fullcv.tex
+          args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode -outdir=./compiled
 
       - name: Compile resume.tex
         uses: dante-ev/latex-action@master
         with:
-          root_file:  resume.tex
-          args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+          root_file: resume.tex
+          args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode -outdir=./compiled
 
       - name: Push compiled files
         run: |

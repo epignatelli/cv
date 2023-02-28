@@ -3,7 +3,9 @@
         "name": "latexmk (xelatex)",
         "tools": [
             "xelatexmk"
-        ]
+        ],
     },
-]}
+],
+"latex-workshop.latex.outDir": "./compiled",
+}
 
