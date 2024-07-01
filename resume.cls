@@ -40,8 +40,9 @@
 \newcommand{\position}[1]{\textbf{#1}\par}
 \newcommand{\employer}[1]{\textbf{#1}\par}
 \newcommand{\dates}[1]{#1\par}
-\newcommand{\place}[1]{\ifisfullcv\par\else#1\fi}
+\newcommand{\place}[1]{\ifisfullcv\par\else#1\par\fi}
 \newcommand{\jobdescription}[1]{\ifisfullcv#1\else\par\fi}
+\newcommand{\topic}[1]{\textit{Subject: #1}\par}
 
 
 % - contact items formatting
