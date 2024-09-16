@@ -47,9 +47,9 @@
 
 % - contact items formatting
 % ----------------------------------------------------------------------------------------
-\newcommand{\email}[2]{\href{#1}{#2}\\}
+\newcommand{\website}[2]{\href{#1}{#2}\\}
+\newcommand{\email}[2]{\href{#1}{#2}}
 \newcommand{\mobile}[2]{\href{#1}{#2}\ifisfullcv\\\relax\else\fi}
-\newcommand{\website}[2]{\ifisfullcv\href{#1}{#2}\\\else\par\fi}
 \newcommand{\github}[2]{\ifisfullcv\href{#1}{#2}\\\else\par\fi}
 \newcommand{\linkedin}[2]{\ifisfullcv\href{#1}{#2}\\\else\par\fi}
 \newcommand{\twitter}[2]{\ifisfullcv\href{#1}{#2}\\\else\par\fi}
