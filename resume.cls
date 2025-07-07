@@ -2,16 +2,19 @@
 \NeedsTeXFormat{LaTeX2e}
 \LoadClass[10pt,a4paper]{article}
 
+
 \RequirePackage[a4paper, top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
-\RequirePackage[parfill]{parskip}
+\RequirePackage{parskip}
 \RequirePackage{array}
 \RequirePackage{ifthen}
+\PassOptionsToPackage{nobottomtitles*}{titlesec}% or {nobottomtitles}
 \RequirePackage{titlesec}
 \RequirePackage{versions}
 \RequirePackage{verbatim} % required for \excludeversion
 \RequirePackage[dvipsnames]{xcolor}
 \RequirePackage{xcolor}
-\RequirePackage{hyperref}
+% \RequirePackage{hyperref}
+\usepackage[colorlinks=true, linkcolor=mblue, filecolor=magenta, urlcolor=mblue, pdfborderstyle={/S/U/W 1}]{hyperref}
 
 % Define colors
 \definecolor{RubinRed}{RGB}{192,0,0}
@@ -51,7 +54,7 @@
 % Sections
 \newenvironment{education}{\section*{\sc EDUCATION}}{}
 \newenvironment{industryExperience}{\section*{\sc EXPERIENCE}}{}
-\newenvironment{teachingExperience}{\section*{\sc TEACHING EXPERIENCE}}{}
+\newenvironment{teachingExperience}{\section*{\sc CONSULTING}}{}
 \newenvironment{publications}{\section*{\sc PUBLICATIONS}}{}
 \newenvironment{awards}{\section*{\sc AWARDS AND SCHOLARSHIPS}}{}
 \newenvironment{presentations}{\section*{\sc PRESENTATIONS AND LECTURES}}{}
