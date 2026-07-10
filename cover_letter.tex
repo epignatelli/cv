@@ -1,0 +1,64 @@
+\documentclass[fullcv]{resume}
+
+%!TEX encoding = UTF-8 Unicode
+\usepackage{etex}
+\usepackage{enumitem}
+\usepackage{CormorantGaramond}
+\usepackage{import}
+\usepackage{xltxtra,fontspec,xunicode}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setromanfont{Poppins-ExtraLight}[
+    Path=./fonts/,
+    BoldFont=Poppins-Medium,
+    ItalicFont=Poppins-ExtraLightItalic
+    ]
+\setmonofont{Poppins-ExtraLight}[
+    Path=./fonts/,
+    BoldFont=Poppins-Medium,
+    ItalicFont=Poppins-ExtraLightItalic,
+    ]
+\definecolor{mblue}{HTML}{0668E1}
+\definecolor{dblue}{HTML}{0053d6}
+\renewcommand{\emph}[1]{\textcolor{black}{\textbf{#1}}}
+
+\begin{document}
+
+\subsection*{\emph{\huge\MakeUppercase{Eduardo Pignatelli}}}
+\input{cv/contact.tex}
+
+\vspace{1.5em}
+London, July 10, 2026
+
+\vspace{0.5em}
+\textit{Re: RL Fellows Program — Anthropic}
+
+\vspace{1em}
+To whom it may concern at Anthropic,
+
+\vspace{0.8em}
+I am writing to apply for the Reinforcement Learning Fellows Program at Anthropic. My research sits at the intersection of deep RL and large language models, with a focus on building scalable RL environments and solving the credit assignment problem. I combine an academic track record in RL with five years of industry experience shipping ML systems, and I am motivated by the challenge of scaling RL to produce safe, capable AI — which is precisely what this Fellowship is designed to accelerate.
+
+\vspace{0.8em}
+\textbf{Academic and research experience.} I am currently a Lecturer at UCL, where I coordinate the Research Projects module and lead the Data Acquisition and Processing Systems course within the Integrated Machine Learning Master's. Before this, I completed my PhD at UCL under the supervision of Laura Toni and Tim Rocktäschel at the intersection of Deep Reinforcement Learning and Large Language Models, with a focus on the Credit Assignment Problem. I reviewed the field with \textit{A Survey on the Temporal Credit Assignment Problem in Deep Reinforcement Learning}, which received the TMLR ``Survey Certification'' award for exceptional thoroughness. I showed that Large Language Models align with human evaluations of action relevance across navigation tasks, and I developed \href{https://github.com/epignatelli/navix}{\textcolor{mblue}{NAVIX}}, a widely adopted JAX reimplementation of MiniGrid that enables RL experiments to run orders of magnitude faster and at larger scale.
+
+Most recently, I co-authored \href{https://arxiv.org/abs/2409.15618}{\textcolor{mblue}{BALROG}} (ICLR 2025), a benchmark for evaluating LLM and VLM agents on long-horizon interactive tasks — work that sits directly at the boundary of RL and foundation models.
+
+\vspace{0.8em}
+\textbf{Research agenda and fit with the Fellowship.} The Fellowship's core workstreams — building RL environments to improve Claude's capabilities, and model-based tools to understand and improve training data quality — map directly onto my existing work. NAVIX demonstrates my ability to design, implement, and maintain high-quality RL environments that scale: it uses JAX's vectorised execution to run thousands of parallel environments on a single GPU, and has been adopted by researchers across multiple institutions. Extending this expertise to frontier model training pipelines, guided by Anthropic's researchers, is exactly the kind of step-change in scale and impact I am seeking.
+
+More broadly, my research agenda centres on how agents learn effective temporally extended actions from large-scale demonstrations without dense feedback — the core bottleneck in scaling RL beyond environments with immediate rewards. This is precisely the challenge in post-training frontier models like Claude: multi-turn reasoning and long-horizon tool use require RL signals that propagate meaningfully across hundreds of steps. Building environments that expose this structure, and designing training schemes that assign credit across it, is where my doctoral work and the Fellowship's goals directly converge.
+
+\vspace{0.8em}
+\textbf{Industry experience.} Before academia, I spent five years translating early ML research into commercial products. As Machine Learning Lead at BuroHappold Engineering (2017–2020, London), I delivered deep-learning tools now used by the Premier League and internal teams, democratised access to deep learning across the organisation, and managed a cross-disciplinary team. These roles developed my ability to move fast, communicate across skill levels, and deliver systems that hold up in production — the same skills the Fellowship demands.
+
+\vspace{0.8em}
+\textbf{Why me?} I have a rare combination of RL research depth, hands-on JAX environment-building experience, and a proven ability to ship production ML systems. My work on NAVIX shows I can build the kind of robust, scalable RL infrastructure that frontier model training requires. My credit assignment research shows I understand the hard theoretical problems that sit beneath effective RL training. And my industry background means I know how to operate in fast-moving, high-stakes environments.
+
+\vspace{0.8em}
+\textbf{Why the Anthropic RL Fellows Program?} Anthropic is doing the most ambitious RL-for-alignment work in the field. The Fellowship offers access to compute and mentorship that would compress years of progress into four months — and the chance to contribute directly to making frontier AI safer and more capable. That combination of impact, rigour, and scale is what drives me.
+
+\vspace{1.5em}
+Sincerely,\\[0.3em]
+Eduardo Pignatelli
+
+\end{document}
