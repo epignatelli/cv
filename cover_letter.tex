@@ -29,65 +29,46 @@
 \pagestyle{empty}
 \hfill
 London, \today
-\vspace{2em}
+\vspace{1em}
 
 \hfill
 \noindent\textit{Re: RL Fellows Program}
-\vspace{3em}
+\vspace{2em}
 
 \noindent To whom it may concern at \textit{Anthropic},
-\vspace{2em}
+\vspace{1em}
 
 \noindent
 I am writing to apply for the \emph{RL Fellows Program} at \textbf{Anthropic}.
-\emph{My research} sits at the intersection of deep RL and large language models, with a focus on \emph{credit assignment} and building \emph{scalable RL environments}.
-I combine an academic track record in RL/LLMs with five years of industry experience shipping ML systems, and I am motivated by the challenge of \emph{scaling RL} to produce safe, capable AI — which is precisely what this Fellowship is designed to accelerate.
+My research sits at the intersection of deep RL and large language models, with a focus on \emph{credit assignment} and \emph{scalable RL environments}.
+I combine an academic track record in RL/LLMs with five years of industry experience shipping ML systems, and I am motivated by the challenge of \emph{scaling RL} to produce safe, capable AI.
 
 \paragraph{Academic and research experience.}
-Currently, I am an \emph{Assistant Professor in Machine Learning at UCL} and \emph{Associate Faculty} at the \link{https://bold-lab.ai/}{BOLD Lab} — a £60M UKRI-funded national AI research lab unifying Oxford, UCL, and Imperial around open-ended learning, embodied AI, and new learning paradigms beyond backpropagation, led by Jakob Foerster.
-At UCL, I lead three modules: \textit{ELEC0136: Machine Learning System Design}, \textit{ELEC0021: Programming for Machine Learning}, and \textit{ELEC0054: Research Projects}, where I coordinate UCL's thesis-project portfolio.
-I also teach in \textit{ELEC0130: Internet of Things}, \textit{ELEC0149: Introduction to Machine Learning}, and \textit{ELEC0135: Deep Learning}, and contribute to syllabus design for Deep Learning and NLP.
-I was nominated for the \emph{UCL Inspiring Teaching Delivery award} two years in a row (2025 and 2026).
+I am an \emph{Assistant Professor in Machine Learning at UCL} and \emph{Associate Faculty} at the \link{https://bold-lab.ai/}{BOLD Lab} — a £60M UKRI-funded national AI research lab (Oxford, UCL, Imperial) led by Jakob Foerster, focused on open-ended learning and embodied AI.
+I lead three modules, teach in several others, and have been nominated for the \emph{UCL Inspiring Teaching Delivery Award} two years running.
 
-Before this, I completed my PhD at \emph{UCL} under the supervision of Laura Toni and Tim Rocktäschel at the intersection of \emph{Deep Reinforcement Learning} (RL) and \emph{Large Language Models} (LLMs) with a focus on the Credit Assignment Problem.
-I reviewed the field with \textit{A Survey on the Temporal Credit Assignment Problem}, which received the TMLR ``Survey Certification'' \emph{award} for \textit{exceptional thoroughness}.
-I showed that \emph{Large Language Models} align with human evaluations of action relevance across navigation tasks, and I developed \emph{NAVIX}, a \emph{widely adopted} JAX reimplementation of MiniGrid that enables faster iteration and cleaner evaluations.
-Most recently, I co-authored \emph{BALROG} (ICLR 2025), a benchmark for evaluating LLM and VLM agents on long-horizon interactive tasks.
+My \emph{PhD} at UCL, with Laura Toni and Tim Rocktäschel, focused on the Credit Assignment Problem at the intersection of deep RL and LLMs.
+I authored a \emph{TMLR Survey Certification}-awarded survey on temporal credit assignment, showed that LLMs align with human evaluations of action relevance in RL, built \emph{NAVIX} — a widely adopted JAX reimplementation of MiniGrid at thousands of parallel environments per GPU — and co-authored \emph{BALROG} (ICLR 2025), a benchmark for LLM/VLM agents on long-horizon tasks.
 
 \paragraph{Research agenda.}
-I care about \emph{scaling RL} to real-world problems through principled environment design and credit assignment.
-A key conclusion from my doctoral studies is that effective RL training demands two things: \emph{environments that expose long-horizon structure}, and \emph{training schemes that propagate credit across it}.
-My current work targets this directly: I am developing \emph{latent option models} that scale \emph{options} — temporally extended actions — to large, complex environments. By learning a reusable vocabulary of latent actions from large-scale, \emph{action-free} demonstrations, agents acquire a discrete action space that can then be fine-tuned with RLHF/RLAIF.
-This connects directly to the Fellowship's workstreams: multi-turn reasoning and long-horizon tool use in Claude require RL signals that propagate meaningfully across hundreds of steps — the harder the credit assignment problem, the more principled the environment and training scheme need to be.
+My current work develops \emph{latent option models} that scale options — temporally extended actions — by learning a reusable vocabulary of latent actions from large-scale, \emph{action-free} demonstrations, which can then be fine-tuned with RLHF/RLAIF.
+This connects directly to the Fellowship's workstreams: multi-turn reasoning and long-horizon tool use in Claude require RL signals that propagate meaningfully across hundreds of steps — the harder the credit assignment problem, the more principled the training scheme needs to be.
 
 \paragraph{Industry experience.}
-Before academia, I spent \emph{five} years translating early machine learning research into commercial products.
-At Burohappold (2017 to 2020, London, UK), as \emph{Machine Learning Lead}, I delivered deep-learning tools now used by the \emph{Premier League} and internal teams, creating new revenue streams and increasing operational efficiency.
-At Gridshell.it (2015 to 2017, Naples, Italy) I developed open-source multi-objective \emph{genetic algorithms} for structural and acoustic engineering in resource-constrained settings; this work was recognised with the \emph{Peter Lord Award}.
-
-These roles developed my ability to align scientists, engineers, and stakeholders around ambitious, complex deliverables, and strengthened my \emph{systems} mindset—building reproducible codebases and infrastructure in \emph{JAX}/\emph{PyTorch} for long-running experiments.
-
-\paragraph{Why me?}
-I have a rare combination of \emph{RL research depth}, hands-on \emph{JAX environment-building} experience, and a proven ability to \emph{ship production ML systems}.
-My work on NAVIX shows I can build robust, scalable RL infrastructure: thousands of parallel environments on a single GPU, adopted across multiple research groups.
-My credit assignment research shows I understand the hard theoretical problems that sit beneath effective RL training.
-\emph{My agenda}—principled environment design and temporally extended action learning to scale RL—\emph{aligns} closely with the Fellowship's goal of improving Claude's capabilities through RL.
-
-Five years of \emph{industry experience} gave me a product-oriented, demand-driven mindset and the organisation and management skills to \emph{plan effectively} and \emph{execute efficiently}.
-My \emph{working ethos} is grounded in teamwork, collaboration, and mutual understanding.
-
-The \emph{transition from architecture} to AI was a \emph{proactive} leap that shows \emph{flexibility}, rapid skill acquisition beyond my comfort zone, and sustained \emph{determination} and \emph{dedication}.
-In short, this multidisciplinary journey equipped me to manage and execute \emph{complex}, \emph{ambitious} projects that span multiple fields.
+Before academia, I spent \emph{five years} translating ML research into commercial products.
+As \emph{ML Lead} at Burohappold Engineering (2017–2020, London), I delivered deep-learning tools now used by the \emph{Premier League}, creating new revenue streams.
+At Gridshell.it, open-source genetic algorithms for structural engineering received the \emph{Peter Lord Award}.
+These roles gave me a \emph{systems mindset} — reproducible codebases and infrastructure in JAX/PyTorch for long-running experiments — and the ability to align scientists, engineers, and stakeholders around ambitious deliverables.
 
 \paragraph{Why the RL Fellows Program at Anthropic?}
-Anthropic is doing the most \emph{ambitious RL-for-alignment} work in the field, at a scale and pace that no academic group can match.
-The Fellowship offers direct mentorship from researchers defining the frontier of post-training, access to compute that would compress years of progress into four months, and a \emph{clear path} — 25–50\% of Fellows receive full-time offers — to contributing to that mission long-term.
-I thrive where the challenge is not between a bad and a good idea, but between a \emph{good} and a \emph{great} one — settings that keep my motivation high and maximise the impact I can deliver.
+Anthropic is doing the most \emph{ambitious RL-for-alignment} work in the field, at a scale no academic group can match.
+The Fellowship offers direct mentorship from researchers defining the frontier of post-training, the compute to carry out the experiments for \emph{latent option models} that would compress a year of progress into four months, and a \emph{clear path} to contributing to Anthropic's mission long-term and full-time.
+My agenda — principled environment design and temporally extended action learning — aligns closely with the goal of improving Claude's capabilities through RL, and I look forward to discussing how I can contribute.
 
-\vspace{3em}
+\vspace{2em}
 \noindent Sincerely, \\
 \noindent Eduardo Pignatelli
 \par
-\vspace{1em}
+\vspace{0.5em}
 \noindent\includegraphics[height=1.3cm,keepaspectratio]{PE_EP_Signature_02.png}
 \end{document}
