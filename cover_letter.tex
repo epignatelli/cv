@@ -44,8 +44,8 @@ I am writing to apply for the \emph{RL Fellows Program} at \textbf{Anthropic}.
 I combine an academic track record in RL/LLMs with five years of industry experience shipping ML systems, and I am motivated by the challenge of \emph{scaling RL} to produce safe, capable AI — which is precisely what this Fellowship is designed to accelerate.
 
 \paragraph{Academic and research experience.}
-Currently, I am a \emph{Lecturer at UCL}.
-I lead the \textit{Data Acquisition and Processing Systems} and \textit{Programming for AI} modules, and the \textit{Research Projects} module, where I coordinate UCL's thesis-project portfolio.
+Currently, I am an \emph{Assistant Professor in Machine Learning at UCL}.
+I lead three modules: \textit{ELEC0136: Machine Learning System Design}, \textit{ELEC0021: Programming for Machine Learning}, and \textit{ELEC0054: Research Projects}, where I coordinate UCL's thesis-project portfolio.
 Seven months in, I was nominated for the \emph{UCL Inspiring Teaching Delivery award}.
 
 Before this, I completed my PhD at \emph{UCL} under the supervision of Laura Toni and Tim Rocktäschel at the intersection of \emph{Deep Reinforcement Learning} (RL) and \emph{Large Language Models} (LLMs) with a focus on the Credit Assignment Problem.
@@ -56,8 +56,7 @@ Most recently, I co-authored \emph{BALROG} (ICLR 2025), a benchmark for evaluati
 \paragraph{Research agenda.}
 I care about \emph{scaling RL} to real-world problems through principled environment design and credit assignment.
 A key conclusion from my doctoral studies is that effective RL training demands two things: \emph{environments that expose long-horizon structure}, and \emph{training schemes that propagate credit across it}.
-Building on this, I am investigating how agents can learn temporally extended actions — \emph{options} — from large-scale, \emph{action-free} demonstrations to seed open-ended learning through interaction.
-These learned actions define a discrete action space that we can fine-tune with RLHF/RLAIF.
+My current work targets this directly: I am developing \emph{latent option models} that scale \emph{options} — temporally extended actions — to large, complex environments. By learning a reusable vocabulary of latent actions from large-scale, \emph{action-free} demonstrations, agents acquire a discrete action space that can then be fine-tuned with RLHF/RLAIF.
 This connects directly to the Fellowship's workstreams: multi-turn reasoning and long-horizon tool use in Claude require RL signals that propagate meaningfully across hundreds of steps — the harder the credit assignment problem, the more principled the environment and training scheme need to be.
 
 \paragraph{Industry experience.}
